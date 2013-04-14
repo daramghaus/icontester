@@ -1,0 +1,401 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  
+	<!-- Icon Tester : http://daramghaus.com/icontester -->
+	
+  	<meta charset="utf-8">
+  	<meta name="keywords" content="app,icon,iOS,icon design,retina icon">
+	<meta name="description" content="Test your iOS icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="icon-72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="icon-72@2x.png" />
+    <link rel="apple-touch-icon-precomposed" href="icon.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="icon@2x.png" />
+	<title>Icon Tester</title>
+	<style type="text/css">
+
+@charset "utf-8";
+[hidden], area, base, basefont, command, datalist, head,
+input[type=hidden], link, menu[type=context], meta, noembed, noframes,
+param, script, source, style, track, title { /* case-insensitive */
+  display: none; }
+
+address, article, aside, blockquote, body, center, dd, dir, div, dl,
+dt, figure, figcaption, footer, form, h1, h2, h3, h4, h5, h6, header,
+hgroup, hr, html, legend, listing, menu, nav, ol, p, plaintext, pre,
+section, summary, ul, xmp { display: block; }
+
+table { display: table; }
+caption { display: table-caption; }
+colgroup { display: table-column-group; }
+col { display: table-column; }
+thead { display: table-header-group; }
+tbody { display: table-row-group; }
+tfoot { display: table-footer-group; }
+tr { display: table-row; }
+td, th { display: table-cell; }
+
+li { display: list-item; }
+
+ruby { display: ruby; }
+rt { display: ruby-text;}
+
+.blind, #skipBottom, legend{
+	position:absolute;
+	left:-9999em;
+}
+html, body, h1, h2, h3, h4, h5, h6, p, figure, fieldset {
+	padding:0;
+	margin:0;	
+}
+fieldset, img, img a{
+	border:0 none;	
+}
+body {
+	font-size:0.75em;
+	font-family:'Helvetica Neue',sans-serif;
+	line-height:1.2;
+}
+a {
+	text-decoration:none;	
+}
+a:link {
+	color:#000000;		
+}
+a:visited {
+	color:#000000;		
+}
+a:hover, a:focus, a:active {
+	color:#000000;		
+}
+ul, ol, li{
+	margin:0;
+	padding:0;
+	list-style:none;	
+}
+em, address{
+	font-style:normal;	
+}
+* {
+	line-height: 1.6;
+}
+h1 {
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+h2 {
+	font-weight: normal;
+	font-size: 1.4em;
+	padding-bottom: 10px;
+	margin-top: 0;
+}
+em {
+	font-weight: bold;
+}
+#wrapper {
+	position:relative;
+	width:100%;
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+}
+#header, #contents, #footer{
+	position:relative;
+	left:6%;
+	right:6%;
+	width:88%;
+	margin-top:2em;
+}
+#header {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+#header > h1 {
+	font-size:2.5em;
+	margin-bottom: 1em;
+}
+
+#header > p {
+	font-size:1.2em;
+	line-height: 1.6;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+	padding-bottom: 0.0em;
+}
+
+#ChangeBg, #download {
+	margin-top: 2em;			
+}
+#ChangeBg p{
+	font-size:1.2em;
+	line-height: 1.6;
+	margin-bottom:0.8em;
+}
+#ChangeBg input {
+	border: none;
+	border-radius: 3px;
+	float: left;
+	position: relative;
+	margin-right: 12px;
+	margin-bottom: 12px;
+	width: 30px;
+	height: 30px;
+}
+#ChangeBg input:hover {
+	opacity: 0.7;			
+}
+#contents {
+	overflow:hidden;
+	padding-top: 2em;
+	position: relative;
+	
+}
+#contents p {
+	font-size:1.2em;
+	color: gray;
+}
+.iDevice > h1, #iTunes > h1 {
+	font-size:2em;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+.iDevice {
+	position: relative;
+	width:50%;
+	min-width: 280px;
+	float: left;
+	margin-bottom: 3em;
+	overflow: hidden;
+}
+#iTunes {
+	width:100%;
+	min-width: 280px;
+	float: left;
+	margin-top: 1em;
+}
+.Size > h1 {
+	font-size:1.4em;
+	margin-bottom: 0.4em;
+	opacity: 0.7;
+
+}
+.Retina li{
+	position: relative;
+	width:50%;
+	float: left;
+	padding-bottom: 1em;
+}
+li > h1 {
+	font-size:1.2em;			
+	margin-bottom: 0.3em;
+	padding-top: 1em;
+	opacity: 0.7;
+	text-align: center;
+}
+.info {
+	opacity: 0.5;
+	display: inherit;
+	text-align: center;
+}
+li {
+	margin-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.Icon {
+	width:57px;
+	height: 57px;
+	border-radius: 10px;
+	margin-top:15px;
+}
+.Icon-72 {
+	width:72px;
+	height: 72px;
+	border-radius: 12.632px;
+}
+.Icon-Small {
+	width:29px;
+	height: 29px;
+	border-radius: 5.088px;
+	margin-top:43px;
+}
+.Icon-Small-50 {
+	width:50px;
+	height: 50px;
+	border-radius: 8.772px;
+	margin-top:22px;
+}
+.iTunesArtwork {
+	width:100%;
+	max-width:512px;
+	max-height: 512px;
+	border-radius: 17.544%;
+	margin-top:2.4em;
+	margin-bottom: 1.6em;	
+}
+#footer {
+	font-size: 0.8em;
+	margin-top: 4em;
+	padding-bottom: 2em;
+	font-size: 1.2em;
+	text-align: center;
+}
+#fotter p{
+	opacity: 0.7;		
+}
+#footerLink {
+	z-index: 10;
+	width:100%;
+	height: 4em;
+	position: absolute;
+	bottom:0;
+}
+.styled-button {
+	background:#5CCD00;
+	background:-moz-linear-gradient(top,#5CCD00 0%,#4AA400 100%);
+	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#5CCD00),color-stop(100%,#4AA400));
+	background:-webkit-linear-gradient(top,#5CCD00 0%,#4AA400 100%);
+	background:-o-linear-gradient(top,#5CCD00 0%,#4AA400 100%);
+	background:-ms-linear-gradient(top,#5CCD00 0%,#4AA400 100%);
+	background:linear-gradient(top,#5CCD00 0%,#4AA400 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5CCD00',endColorstr='#4AA400',GradientType=0);
+	padding:6px 10px;
+	color:#fff;
+	font-family:'Helvetica Neue',sans-serif;
+	font-size:1.2em;
+	border-radius:5px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border:1px solid #459A00;
+	position: absolute;
+	top:4px;
+	right:0px;
+}
+input {
+	cursor:pointer
+}
+input:hover {
+	opacity: 0.7;			
+} 
+	</style>
+	
+<!-- IE -->
+<!--[if lte IE 8]>
+    <style type="text/css">
+
+    </style>
+<![endif]-->
+
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+        <h1>Icon Tester</h1>
+        <form id="ChangeBg">
+            <h2><em>Change Background Color</em></h2>
+            <p><input type="button" value="" onClick="document.bgColor = '#ffffff';document.fgColor='#000000';" style="background-color: #ffffff; border:1px solid #bbbbbb" alt="white">
+            <input type="button" value="" onClick="document.bgColor = '#888888';document.fgColor='#ffffff';" style="background-color: #888888; border:1px solid #666666" alt="gray">
+            <input type="button" value="" onClick="document.bgColor = '#333333';document.fgColor='#ffffff';" style="background-color: #333333; border:1px solid #222222" alt="darkgray">
+            <input type="button" value="" onClick="document.bgColor = '#000000';document.fgColor='#ffffff';" style="background-color: #000000; border:1px solid #333333" alt="black">
+            <input type="button" value="" onClick="document.bgColor = '#E35952';document.fgColor='#ffffff';" style="background-color: #E35952; border:1px solid #C42C23" alt="red">
+            <input type="button" value="" onClick="document.bgColor = '#FF984F';document.fgColor='#000000';" style="background-color: #FF984F; border:1px solid #E86B05" alt="orange">
+            <input type="button" value="" onClick="document.bgColor = '#F7DC88';document.fgColor='#000000';" style="background-color: #F7DC88; border:1px solid #DEAD1F" alt="yellow">
+            <input type="button" value="" onClick="document.bgColor = '#90CC50';document.fgColor='#000000';" style="background-color: #90CC50; border:1px solid #7AB03F" alt="yellowgreen">
+            <input type="button" value="" onClick="document.bgColor = '#3FB070';document.fgColor='#ffffff';" style="background-color: #3FB070; border:1px solid #32945D" alt="green">
+            <input type="button" value="" onClick="document.bgColor = '#39C6DB';document.fgColor='#000000';" style="background-color: #39C6DB; border:1px solid #32AFC2" alt="skyblue">
+            <input type="button" value="" onClick="document.bgColor = '#5E8DAD';document.fgColor='#ffffff';" style="background-color: #5E8DAD; border:1px solid #4D7691" alt="blue">
+            <input type="button" value="" onClick="document.bgColor = '#9B6FC9';document.fgColor='#ffffff';" style="background-color: #9B6FC9; border:1px solid #7D50AD" alt="violet"></p>
+		</form><br><br>
+	</div>
+	<div id="contents">
+		<div class="iDevice">
+			<h1>iPhone</h1>
+			<div class="Size">
+				<ul class="Retina">
+					<li>
+						<img class="Icon" src="icon.png" alt="icon.png">
+						<h1>icon.png</h1>
+						<span class="info"><em>57px</em> R:10px</span>
+					</li>
+					<li>
+						<img class="Icon" src="icon@2x.png" alt="icon@2x.png">
+						<h1>icon@2x.png</h1>
+						<span class="info"><em>114px</em> R:20px</span>
+					</li>
+				</ul>
+			</div>
+            <div class="Size">
+                <ul class="Retina">
+                    <li>
+                        <img class="Icon-Small" src="Icon-Small.png" alt="Icon-Small.png">
+                        <h1>Icon-Small.png</h1>
+                        <span class="info"><em>29px</em> R:5.088px</span>
+                    </li>
+                    <li>
+                        <img class="Icon-Small" src="Icon-Small@2x.png" alt="Icon-Small@2x.png">
+                        <h1>Icon-Small@2x.png</h1>
+                        <span class="info"><em>58px</em> R:10.175px</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="iDevice">
+            <h1>iPad</h1>
+            <div class="Size">
+                <ul class="Retina">
+                    <li>
+                        <img class="Icon-72" src="icon-72.png" alt="icon-72.png">
+                        <h1>icon-72.png</h1>
+                        <span class="info"><em>72px</em> R:12.632px</span>
+                    </li>
+                    <li>
+                        <img class="Icon-72" src="icon-72@2x.png" alt="icon-72@2x.png">
+                        <h1>icon-72@2x.png</h1>
+                        <span class="info"><em>144px</em> R:25.263px</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="Size">
+                <ul class="Retina">
+                    <li>
+                        <img class="Icon-Small-50" src="Icon-Small-50.png" alt="Icon-Small-50.png">
+                        <h1>Icon-Small-50.png</h1>
+                        <span class="info"><em>50px</em> R:8.772px</span>
+                    </li>
+                    <li>
+                        <img class="Icon-Small-50" src="Icon-Small-50@2x.png" alt="Icon-Small-50.png">
+                        <h1>Icon-Small-50@2x</h1>
+                        <span class="info"><em>100px</em> R:17.544px</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div  id="iTunes">
+            <h1>iTunesArtwork</h1>
+            <div class="Size">
+                <ul>
+                    <li>
+                        <img class="iTunesArtwork" src="iTunesArtwork.png" alt="iTunesArtwork.png">
+                        <h1>iTunesArtwork.png</h1>
+                        <span class="info"><em>1024px</em> R:179.65px</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+	</div>
+    <div id="footer">
+	    <a href="http://daramghaus.com" target="_blank"><div id="footerLink"></div></a>
+	    <br><br><center><p>&copy; daramghaus.com<br>Icon Tester ver 1.1.2</p></center>
+	</div>
+</div>
+</body>
+</html>
