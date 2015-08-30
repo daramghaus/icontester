@@ -883,7 +883,18 @@ img {
 	z-index: 999;
 	margin: auto;
 }
-
+.icon-60 .mask.retinaHD{
+	position: absolute;
+	width:60px;
+	height: 60px;
+	left:auto;
+	right:auto;
+	top:0;
+	background-image: url(images/mask_icon-60@3x.png);
+	background-size: 100%;
+	z-index: 999;
+	margin: auto;
+}
 .icon-40 {
 	position: relative;
 	width:40px;
@@ -909,6 +920,18 @@ img {
 	right:auto;
 	top:0;
 	background-image: url(images/mask_icon-40@2x.png);
+	background-size: 100%;
+	z-index: 999;
+	margin: auto;
+}
+.icon-40 .mask.retinaHD{
+	position: absolute;
+	width:40px;
+	height: 40px;
+	left:auto;
+	right:auto;
+	top:0;
+	background-image: url(images/mask_icon-40@3x.png);
 	background-size: 100%;
 	z-index: 999;
 	margin: auto;
@@ -996,6 +1019,18 @@ img {
 	right:auto;
 	top:0;
 	background-image: url(images/mask_Icon-Small_iOS7.png);
+	background-size: 100%;
+	z-index: 999;
+	margin: auto;
+}
+.Icon-Small_iOS7 .mask.retinaHD{
+	position: absolute;
+	width:29px;
+	height: 29px;
+	left:auto;
+	right:auto;
+	top:0;
+	background-image: url(images/mask_Icon-Small_iOS7@3x.png);
 	background-size: 100%;
 	z-index: 999;
 	margin: auto;

@@ -4,13 +4,14 @@
 	<meta charset="utf-8"/>
 		
 	<!-- Icon Tester : http://daramghaus.com/icontester -->
-  	<meta name="keywords" content="app,icon,iOS,,iOS6,iOS7,icon design,retina icon,design">
+  	<meta name="keywords" content="app,icon,iOS,,iOS6,iOS7,iOS8 icon design,retina icon,design">
 	<meta name="description" content="Test your icon">
 
 	<!-- iPhone -->
-    <link rel="apple-touch-icon-precomposed" href="images/iPhone/icon.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/iPhone/icon.png">
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/iPhone/icon@2x.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/iPhone/icon-60@2x.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="images/iPhone/icon-60@3x.png" />
 
 	<!-- iPad -->
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/iPad/icon-72.png" />
@@ -18,27 +19,11 @@
 	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/iPad/icon-76.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/iPad/icon-76@2x.png" />
 
-	<!-- Android -->
-	<!-- I'll fix auto-detect device DPI next version.
-    <link rel="shortcut icon" sizes="36x36" href="images/android/drawable-ldpi/icon.png" />
-    <link rel="shortcut icon" sizes="48x48" href="images/android/drawable-mdpi/icon.png" />
-    <link rel="shortcut icon" sizes="72x72" href="images/android/drawable-hdpi/icon.png" />
-    <link rel="shortcut icon" sizes="96x96" href="images/android/drawable-xhdpi/icon.png" />
-    <link rel="shortcut icon" sizes="144x144" href="images/android/drawable-xxhdpi/icon.png" />
-    <link rel="shortcut icon" sizes="192x192" href="images/android/drawable-xxxhdpi/icon.png" />
-   -->
-   
    	<link rel="shortcut icon" href="images/android/icon.png" />		
    	
 		<meta name="format-detection" content="telephone=no" />
 		<title>Icon Tester</title>
-		<meta name="viewport" content="minimum-scale=1.0; maximum-scale=1.0; user-scalable=no; initial-scale=1.0; width=device-width;" />
-		
-		<!-- iOS7 bug - a tag target error on full screen web app mode :(
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-		-->
-				
+		<meta name="viewport" content="minimum-scale=1.0; maximum-scale=1.0; user-scalable=no; initial-scale=1.0; width=device-width;" />	
 		<link rel="stylesheet" href="css/app.css">
 		<!-- jQuery library -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
@@ -90,14 +75,9 @@
 			</script>
 			
 	</head>
-	<body class="main en"><! test lang: en / ko -->
-		<!-- <div class="header">
-			<span class="header_title en">Icon Tester <span class="lighter">How to use</span></span>
-			<span class="header_title ko">Icon Tester <span class="lighter">사용법</span></span>
-			
-		</div> -->
+	<body class="main en"><!-- test lang: en / ko -->
 		
-		<div class="contents contents_test nav-contents hidden">
+		<div class="contents contents_test nav-contents">
 			
 			<a href="#skipTop">
 			<div id="nav">
@@ -109,7 +89,7 @@
 
 			<div class="lang">
 			<span class="lang_act lang_en">English</span> | <span class="lang_ko">한국어</span></span>
-		</div>	
+			</div>	
 			<div class="cover cover_test"></div>
 			
 			<div class="iOS">
@@ -118,19 +98,19 @@
 				<span class="box_sub_title en">iPhone App Icon</span>
 				<span class="box_sub_title ko">iPhone 앱 아이콘</span>
 				<div class="icon_box_group">
-					<ul class="icon_box icon3">
+					<ul class="icon_box icon4">
 						<li>
 							<img class="icon" src="images/iPhone/icon.png" alt="icon.png">
 							<span class="file_name">icon</span>
 							<span class="file_size">57x57 px<br></span>
-							<span class="file_info gray">iOS6 Rounded Corners<br>10 px</span>
+							<span class="file_info gray">iOS 5,6<br>R 10 px</span>
 							
 						</li>
 						<li>
 							<img class="icon" src="images/iPhone/icon@2x.png" alt="icon@2x.png">
 							<span class="file_name">icon@2x</span>
 							<span class="file_size">114x114 px<br></span>
-							<span class="file_info gray">iOS6 Rounded Corners<br>20 px</span>
+							<span class="file_info gray">iOS 5,6 / Retina<br>R 20 px</span>
 							
 						</li>
 						<li>
@@ -140,7 +120,17 @@
 							</div>
 							<span class="file_name blue">icon-60@2x</span>
 							<span class="file_size blue">120x120 px<br></span>
-							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							<span class="file_info blue">iOS 7,8 / Retina<br>&nbsp;</span>
+							
+						</li>
+						<li>
+							<div class="icon-60">
+								<img src="images/iPhone/icon-60@3x.png" alt="icon-60@3x.png">
+								<div class="mask retinaHD"></div>
+							</div>
+							<span class="file_name blue">icon-60@3x</span>
+							<span class="file_size blue">180x180 px<br></span>
+							<span class="file_info blue">iOS 7,8 / Retina HD<br>&nbsp;</span>
 							
 						</li>
 					</ul>
@@ -148,7 +138,7 @@
 				<span class="box_sub_title en">iPhone Spotlight Icon</span>
 				<span class="box_sub_title ko">iPhone 검색(Spotlight) 아이콘</span>
 				<div class="icon_box_group">
-					<ul class="icon_box icon3">
+					<ul class="icon_box icon4">
 						<li>
 							<div class="Icon-Small">
 								<img src="images/iPhone/Icon-Small.png" alt="Icon-Small.png">
@@ -156,7 +146,7 @@
 							</div>
 							<span class="file_name">Icon-Small</span>
 							<span class="file_size">29x29 px<br></span>
-							<span class="file_info gray">iOS6 Rounded Corners<br>5.088 px</span>
+							<span class="file_info gray">iOS 5,6<br>R 5.088 px</span>
 							
 						</li>
 						<li>
@@ -166,7 +156,7 @@
 							</div>
 							<span class="file_name">Icon-Small@2x</span>
 							<span class="file_size">58x58 px<br></span>
-							<span class="file_info gray">iOS6 Rounded Corners<br>10.175 px</span>
+							<span class="file_info gray">iOS 5,6 / Retina<br>R 10.175 px</span>
 							
 						</li>
 						<li>
@@ -176,7 +166,17 @@
 							</div>
 							<span class="file_name blue">icon-40@2x</span>
 							<span class="file_size blue">80x80 px<br></span>
-							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							<span class="file_info blue">iOS 7,8 / Retina<br>&nbsp;</span>
+							
+						</li>
+						<li>
+							<div class="icon-40 ">
+								<img src="images/iPhone/icon-40@3x.png" alt="icon-40@3x.png">
+								<div class="mask retinaHD"></div>
+							</div>
+							<span class="file_name blue">icon-40@3x</span>
+							<span class="file_size blue">120x120 px<br></span>
+							<span class="file_info blue">iOS 7,8 / Retina HD<br>&nbsp;</span>
 							
 						</li>
 					</ul>
@@ -184,7 +184,7 @@
 				<span class="box_sub_title en">iPhone Settings Icon</span>
 				<span class="box_sub_title ko">iPhone 설정 아이콘</span>
 				<div class="icon_box_group">
-					<ul class="icon_box icon3">
+					<ul class="icon_box icon4">
 						<li>
 							<div class="Icon-Small">
 								<img src="images/iPhone/Icon-Small.png" alt="Icon-Small.png">
@@ -192,7 +192,7 @@
 							</div>
 							<span class="file_name">Icon-Small</span>
 							<span class="file_size">29x29 px<br></span>
-							<span class="file_info gray">iOS6 Rounded Corners<br>5.088 px</span>
+							<span class="file_info gray">iOS 5,6<br>R 5.088 px</span>
 							
 						</li>
 						<li>
@@ -202,7 +202,7 @@
 							</div>
 							<span class="file_name">Icon-Small@2x</span>
 							<span class="file_size">58x58 px<br></span>
-							<span class="file_info gray">iOS6 Rounded Corners<br>10.175 px</span>
+							<span class="file_info gray">iOS 5,6<br>R 10.175 px</span>
 							
 						</li>
 						<li>
@@ -212,7 +212,17 @@
 							</div>
 							<span class="file_name blue">Icon-Small@2x</span>
 							<span class="file_size blue">58x58 px<br></span>
-							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							<span class="file_info blue">iOS 7,8 / Retina<br>&nbsp;</span>
+							
+						</li>
+						<li>
+							<div class="Icon-Small_iOS7">
+								<img src="images/iPhone/Icon-Small@3x.png" alt="Icon-Small@3x.png">
+								<div class="mask retinaHD"></div>
+							</div>
+							<span class="file_name blue">Icon-Small@3x</span>
+							<span class="file_size blue">87x87 px<br></span>
+							<span class="file_info blue">iOS 7,8 / Retina HD<br>&nbsp;</span>
 							
 						</li>
 					</ul>
@@ -229,14 +239,14 @@
 							<img class="icon-72" src="images/iPad/icon-72.png" alt="icon-72.png">
 							<span class="file_name">icon-72</span>
 							<span class="file_size">72x72 px<br></span>
-							<span class="file_info gray">iOS6 Rounded Corners<br>12.632 px</span>
+							<span class="file_info gray">iOS 5,6<br>R 12.632 px</span>
 							
 						</li>
 						<li>
 							<img class="icon-72" src="images/iPad/icon-72@2x.png" alt="icon-72@2x.png">
 							<span class="file_name">icon-72@2x</span>
 							<span class="file_size">144x144 px<br></span>
-							<span class="file_info gray">iOS6 Rounded Corners<br>25.263 px</span>
+							<span class="file_info gray">iOS 5,6 / Retina<br>R 25.263 px</span>
 							
 						</li>
 						<li>
@@ -246,7 +256,7 @@
 							</div>
 							<span class="file_name blue">icon-76</span>
 							<span class="file_size blue">76x76 px<br></span>
-							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							<span class="file_info blue">iOS 7,8<br>&nbsp;</span>
 							
 						</li>
 						<li>
@@ -256,7 +266,7 @@
 							</div>
 							<span class="file_name blue">icon-76@2x</span>
 							<span class="file_size blue">152x152 px<br></span>
-							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							<span class="file_info blue">iOS 7,8 / Retina<br>&nbsp;</span>
 							
 						</li>
 					</ul>
@@ -272,7 +282,7 @@
 							</div>
 							<span class="file_name">Icon-Small-50</span>
 							<span class="file_size">50x50 px<br></span>
-							<span class="file_info gray">iOS6 Rounded Corners<br>8.772 px</span>
+							<span class="file_info gray">iOS 5,6<br>R 8.772 px</span>
 							
 						</li>
 						<li>
@@ -282,7 +292,7 @@
 							</div>
 							<span class="file_name">Icon-Small-50@2x</span>
 							<span class="file_size">100x100 px<br></span>
-							<span class="file_info gray">iOS6 Rounded Corners<br>17.544 px</span>
+							<span class="file_info gray">iOS 5,6 / Retina<br>R 17.544 px</span>
 							
 						</li>
 						<li>
@@ -292,7 +302,7 @@
 							</div>
 							<span class="file_name blue">icon-40</span>
 							<span class="file_size blue">40x40 px<br></span>
-							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							<span class="file_info blue">iOS 7,8<br>&nbsp;</span>
 							
 						</li>
 						<li>
@@ -302,7 +312,7 @@
 							</div>
 							<span class="file_name blue">icon-40@2x</span>
 							<span class="file_size blue">80x80 px<br></span>
-							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							<span class="file_info blue">iOS 7,8 / Retina<br>&nbsp;</span>
 							
 						</li>
 					</ul>
@@ -318,7 +328,7 @@
 							</div>							
 							<span class="file_name">Icon-Small</span>
 							<span class="file_size">29x29 px<br></span>
-							<span class="file_info gray">iOS6 Rounded Corners<br>5.088 px</span>
+							<span class="file_info gray">iOS 5,6<br>R 5.088 px</span>
 							
 						</li>
 						<li>
@@ -328,7 +338,7 @@
 							</div>
 							<span class="file_name">Icon-Small@2x</span>
 							<span class="file_size">58x58 px<br></span>
-							<span class="file_info gray">iOS6 Rounded Corners<br>10.175 px</span>
+							<span class="file_info gray">iOS 5,6 / Retina<br>R 10.175 px</span>
 							
 						</li>
 						<li>
@@ -338,7 +348,7 @@
 							</div>
 							<span class="file_name blue">Icon-Small</span>
 							<span class="file_size blue">58x58 px<br></span>
-							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							<span class="file_info blue">iOS 7,8<br>&nbsp;</span>
 							
 						</li>
 						<li>
@@ -348,7 +358,7 @@
 							</div>
 							<span class="file_name blue">Icon-Small@2x</span>
 							<span class="file_size blue">58x58 px<br></span>
-							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							<span class="file_info blue">iOS 7,8 / Retina<br>&nbsp;</span>
 							
 						</li>
 					</ul>
@@ -369,7 +379,7 @@
 							</div>
 							<span class="file_name">iTunesArtwork</span>
 							<span class="file_size">1024x1024 px<br></span>
-							<span class="file_info gray">iOS6 Rounded Corners<br>179.65 px</span>
+							<span class="file_info gray">iOS 5,6<br>R 179.65 px</span>
 							
 						</li>
 						
@@ -380,7 +390,7 @@
 							</div>
 							<span class="file_name blue">iTunesArtwork</span>
 							<span class="file_size blue">1024x1024 px<br></span>
-							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							<span class="file_info blue">iOS 7,8<br>&nbsp;</span>
 							
 						</li>
 					</ul>
@@ -463,7 +473,7 @@
 			</div> <!-- end of android -->
 			
 		</div>
-		<div class="contents contents_info">
+		<div class="contents contents_info hidden">
 		<div class="lang">
 			<span class="lang_act lang_en">English</span> | <span class="lang_ko">한국어</span></span>
 		</div>		
@@ -476,8 +486,8 @@
 				<span class="box_description en">Icon Tester is Web App, you will be able to test easily your icon by <b><span class="share_add_icon_inline"></span>Add to Home Screen</b> function on iOS - Safari or Android - Google Chrome.<br>To use Icon Tester you will need your Web Server(Local or Internet).</span>
 				<span class="box_description ko">Icon Tester는 iOS - Safari 또는 Android - Google Chrome의 <b><span class="share_add_icon_inline"></span>홈 화면에 추가</b> 기능을 사용하여 쉽게 아이콘을 테스트할 수 있는 웹 앱입니다.<br>Icon Tester를 쓰려면 당신의 웹 서버(로컬 또는 인터넷)가 필요합니다.</span>
 				
-				<span class="box_footer en">Icon Tester Ver.2.1 &mdash; Support iOS, Android</span>
-				<span class="box_footer ko">Icon Tester Ver.2.1 &mdash; iOS, Android 지원</span>
+				<span class="box_footer en">Icon Tester Ver.2.2</span>
+				<span class="box_footer ko">Icon Tester Ver.2.2</span>
 			</div>
 			<div class="group_box">
 			
@@ -486,7 +496,7 @@
 			
 			<span class="box_description en box_ol">
 			<ol>
-<li><b><a href="http://daramghaus.com/icontester/beta/download" target="_blank">Download</a></b> Icon Tester to your Mac or PC.</li>
+<li><b><a href="http://daramghaus.com/icontester/download" target="_blank">Download</a></b> Icon Tester to your Mac or PC.</li>
 <li>Unzip and Upload all files(index.html, css and images folders) to your Web Server.</li>
 <li>Overwrite your icon image files on <b>images</b> folder.<br><b>Android</b>: Overwrite "<i>images/android/icon.png</i>" image.</li>
 <li>Open the <b>index.html</b> on device default web browser of your device.<br>
@@ -506,7 +516,7 @@
 			</span>
 			<span class="box_description ko box_ol">
 			<ol>
-<li>Icon Tester를 맥 또는 PC에 <a href="http://daramghaus.com/icontester/beta/download" target="_blank">다운로드</a>합니다.</li>
+<li>Icon Tester를 맥 또는 PC에 <a href="http://daramghaus.com/icontester/download" target="_blank">다운로드</a>합니다.</li>
 <li>압축을 풀고, 모든 파일(index.html, css, images 폴더)을 당신의 웹 서버에 업로드합니다.</li>
 <li>작업한 아이콘 이미지 파일을 "images"폴더에 덮어씁니다.<br><b>Android</b>에서는 "<i>images/android/icon.png</i>" 이미지만 교체하면 "홈 화면"에 보입니다. 디바이스의 해상도와 상관없이 해당 이미지만 교체해서 테스트하세요.</li>
 
@@ -530,11 +540,16 @@
 			
 			</div>
 			<div class="group_box">	
-				<a href="http://daramghaus.com/icontester/beta/download" target="_blank">
+				<a href="http://daramghaus.com/icontester/download" target="_blank">
 					<span class="long_btn recommend en">Download</span>
 					<span class="long_btn recommend ko">다운로드</span>
 				</a>
 				
+				<a href="https://github.com/daramghaus/icontester" target="_blank">
+					<span class="long_btn en">Go to Github</span>
+					<span class="long_btn ko">Github 바로가기</span>
+				</a>
+
 				<a href="mailto:daramghaus@gmail.com?subject=Icon Tester Feedback">
 					<span class="long_btn en">Contact and Feedback</span>
 					<span class="long_btn ko">문의 및 피드백</span>
@@ -572,7 +587,7 @@
 			</div>
 			<div class="group_footer">
 				<div class="copyright en">
-					Copyright &copy; 2014 <a href="http://daramghaus.com" target="_blank"><span class="daramghaus_logo_inline_gray"></span>daramghaus</a><br>
+					Copyright &copy; 2015 <a href="http://daramghaus.com" target="_blank"><span class="daramghaus_logo_inline_gray"></span>daramghaus</a><br>
 					Icon Tester can be used for commercial purposes.<br>Redistribution is possible, and not be able to sell.<br>Do not change HTML/CSS documents.
 				</div>
 				<div class="copyright ko">
@@ -599,10 +614,10 @@
 		</div>
 		<div class="tabbar">
 			<div class="tabbar_area">
-				<span class="tab_test link_test en">Icon Tester</span>
-				<span class="tab_test link_test ko">Icon Tester</span>
-				<span class="tab_info link_info en pressed">How to Use</span>
-				<span class="tab_info link_info ko pressed">사용법</span>
+				<span class="tab_test link_test en pressed">Icon Tester</span>
+				<span class="tab_test link_test ko pressed">Icon Tester</span>
+				<span class="tab_info link_info en ">How to Use</span>
+				<span class="tab_info link_info ko">사용법</span>
 			</div>
 		</div>
 	</body>
