@@ -1,401 +1,609 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-	
+	<head>
+	<meta charset="utf-8"/>
+		
 	<!-- Icon Tester : http://daramghaus.com/icontester -->
-	
-  	<meta charset="utf-8">
-  	<meta name="keywords" content="app,icon,iOS,icon design,retina icon">
-	<meta name="description" content="Test your iOS icon">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="icon-72.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="icon-72@2x.png" />
-    <link rel="apple-touch-icon-precomposed" href="icon.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="icon@2x.png" />
-	<title>Icon Tester</title>
-	<style type="text/css">
+  	<meta name="keywords" content="app,icon,iOS,,iOS6,iOS7,icon design,retina icon,design">
+	<meta name="description" content="Test your icon">
 
-@charset "utf-8";
-[hidden], area, base, basefont, command, datalist, head,
-input[type=hidden], link, menu[type=context], meta, noembed, noframes,
-param, script, source, style, track, title { /* case-insensitive */
-  display: none; }
+	<!-- iPhone -->
+    <link rel="apple-touch-icon-precomposed" href="images/iPhone/icon.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/iPhone/icon@2x.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/iPhone/icon-60@2x.png" />
 
-address, article, aside, blockquote, body, center, dd, dir, div, dl,
-dt, figure, figcaption, footer, form, h1, h2, h3, h4, h5, h6, header,
-hgroup, hr, html, legend, listing, menu, nav, ol, p, plaintext, pre,
-section, summary, ul, xmp { display: block; }
+	<!-- iPad -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/iPad/icon-72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/iPad/icon-72@2x.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/iPad/icon-76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/iPad/icon-76@2x.png" />
 
-table { display: table; }
-caption { display: table-caption; }
-colgroup { display: table-column-group; }
-col { display: table-column; }
-thead { display: table-header-group; }
-tbody { display: table-row-group; }
-tfoot { display: table-footer-group; }
-tr { display: table-row; }
-td, th { display: table-cell; }
-
-li { display: list-item; }
-
-ruby { display: ruby; }
-rt { display: ruby-text;}
-
-.blind, #skipBottom, legend{
-	position:absolute;
-	left:-9999em;
-}
-html, body, h1, h2, h3, h4, h5, h6, p, figure, fieldset {
-	padding:0;
-	margin:0;	
-}
-fieldset, img, img a{
-	border:0 none;	
-}
-body {
-	font-size:0.75em;
-	font-family:'Helvetica Neue',sans-serif;
-	line-height:1.2;
-}
-a {
-	text-decoration:none;	
-}
-a:link {
-	color:#000000;		
-}
-a:visited {
-	color:#000000;		
-}
-a:hover, a:focus, a:active {
-	color:#000000;		
-}
-ul, ol, li{
-	margin:0;
-	padding:0;
-	list-style:none;	
-}
-em, address{
-	font-style:normal;	
-}
-* {
-	line-height: 1.6;
-}
-h1 {
-	font-weight: bold;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-h2 {
-	font-weight: normal;
-	font-size: 1.4em;
-	padding-bottom: 10px;
-	margin-top: 0;
-}
-em {
-	font-weight: bold;
-}
-#wrapper {
-	position:relative;
-	width:100%;
-	max-width: 1024px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 20px;
-}
-#header, #contents, #footer{
-	position:relative;
-	left:6%;
-	right:6%;
-	width:88%;
-	margin-top:2em;
-}
-#header {
-	margin-bottom: 20px;
-	margin-top: 20px;
-}
-#header > h1 {
-	font-size:2.5em;
-	margin-bottom: 1em;
-}
-
-#header > p {
-	font-size:1.2em;
-	line-height: 1.6;
-	margin-top: 0.4em;
-	margin-bottom: 0.4em;
-	padding-bottom: 0.0em;
-}
-
-#ChangeBg, #download {
-	margin-top: 2em;			
-}
-#ChangeBg p{
-	font-size:1.2em;
-	line-height: 1.6;
-	margin-bottom:0.8em;
-}
-#ChangeBg input {
-	border: none;
-	border-radius: 3px;
-	float: left;
-	position: relative;
-	margin-right: 12px;
-	margin-bottom: 12px;
-	width: 30px;
-	height: 30px;
-}
-#ChangeBg input:hover {
-	opacity: 0.7;			
-}
-#contents {
-	overflow:hidden;
-	padding-top: 2em;
-	position: relative;
-	
-}
-#contents p {
-	font-size:1.2em;
-	color: gray;
-}
-.iDevice > h1, #iTunes > h1 {
-	font-size:2em;
-	font-weight: bold;
-	margin-bottom: 0.5em;
-}
-
-.iDevice {
-	position: relative;
-	width:50%;
-	min-width: 280px;
-	float: left;
-	margin-bottom: 3em;
-	overflow: hidden;
-}
-#iTunes {
-	width:100%;
-	min-width: 280px;
-	float: left;
-	margin-top: 1em;
-}
-.Size > h1 {
-	font-size:1.4em;
-	margin-bottom: 0.4em;
-	opacity: 0.7;
-
-}
-.Retina li{
-	position: relative;
-	width:50%;
-	float: left;
-	padding-bottom: 1em;
-}
-li > h1 {
-	font-size:1.2em;			
-	margin-bottom: 0.3em;
-	padding-top: 1em;
-	opacity: 0.7;
-	text-align: center;
-}
-.info {
-	opacity: 0.5;
-	display: inherit;
-	text-align: center;
-}
-li {
-	margin-top: 1em;
-	margin-left: auto;
-	margin-right: auto;
-}
-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-.Icon {
-	width:57px;
-	height: 57px;
-	border-radius: 10px;
-	margin-top:15px;
-}
-.Icon-72 {
-	width:72px;
-	height: 72px;
-	border-radius: 12.632px;
-}
-.Icon-Small {
-	width:29px;
-	height: 29px;
-	border-radius: 5.088px;
-	margin-top:43px;
-}
-.Icon-Small-50 {
-	width:50px;
-	height: 50px;
-	border-radius: 8.772px;
-	margin-top:22px;
-}
-.iTunesArtwork {
-	width:100%;
-	max-width:512px;
-	max-height: 512px;
-	border-radius: 17.544%;
-	margin-top:2.4em;
-	margin-bottom: 1.6em;	
-}
-#footer {
-	font-size: 0.8em;
-	margin-top: 4em;
-	padding-bottom: 2em;
-	font-size: 1.2em;
-	text-align: center;
-}
-#fotter p{
-	opacity: 0.7;		
-}
-#footerLink {
-	z-index: 10;
-	width:100%;
-	height: 4em;
-	position: absolute;
-	bottom:0;
-}
-.styled-button {
-	background:#5CCD00;
-	background:-moz-linear-gradient(top,#5CCD00 0%,#4AA400 100%);
-	background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#5CCD00),color-stop(100%,#4AA400));
-	background:-webkit-linear-gradient(top,#5CCD00 0%,#4AA400 100%);
-	background:-o-linear-gradient(top,#5CCD00 0%,#4AA400 100%);
-	background:-ms-linear-gradient(top,#5CCD00 0%,#4AA400 100%);
-	background:linear-gradient(top,#5CCD00 0%,#4AA400 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5CCD00',endColorstr='#4AA400',GradientType=0);
-	padding:6px 10px;
-	color:#fff;
-	font-family:'Helvetica Neue',sans-serif;
-	font-size:1.2em;
-	border-radius:5px;
-	-moz-border-radius:4px;
-	-webkit-border-radius:4px;
-	border:1px solid #459A00;
-	position: absolute;
-	top:4px;
-	right:0px;
-}
-input {
-	cursor:pointer
-}
-input:hover {
-	opacity: 0.7;			
-} 
-	</style>
-	
-<!-- IE -->
-<!--[if lte IE 8]>
-    <style type="text/css">
-
-    </style>
-<![endif]-->
-
-</head>
-<body>
-<div id="wrapper">
-	<div id="header">
-        <h1>Icon Tester</h1>
-        <form id="ChangeBg">
-            <h2><em>Change Background Color</em></h2>
-            <p><input type="button" value="" onClick="document.bgColor = '#ffffff';document.fgColor='#000000';" style="background-color: #ffffff; border:1px solid #bbbbbb" alt="white">
-            <input type="button" value="" onClick="document.bgColor = '#888888';document.fgColor='#ffffff';" style="background-color: #888888; border:1px solid #666666" alt="gray">
-            <input type="button" value="" onClick="document.bgColor = '#333333';document.fgColor='#ffffff';" style="background-color: #333333; border:1px solid #222222" alt="darkgray">
-            <input type="button" value="" onClick="document.bgColor = '#000000';document.fgColor='#ffffff';" style="background-color: #000000; border:1px solid #333333" alt="black">
-            <input type="button" value="" onClick="document.bgColor = '#E35952';document.fgColor='#ffffff';" style="background-color: #E35952; border:1px solid #C42C23" alt="red">
-            <input type="button" value="" onClick="document.bgColor = '#FF984F';document.fgColor='#000000';" style="background-color: #FF984F; border:1px solid #E86B05" alt="orange">
-            <input type="button" value="" onClick="document.bgColor = '#F7DC88';document.fgColor='#000000';" style="background-color: #F7DC88; border:1px solid #DEAD1F" alt="yellow">
-            <input type="button" value="" onClick="document.bgColor = '#90CC50';document.fgColor='#000000';" style="background-color: #90CC50; border:1px solid #7AB03F" alt="yellowgreen">
-            <input type="button" value="" onClick="document.bgColor = '#3FB070';document.fgColor='#ffffff';" style="background-color: #3FB070; border:1px solid #32945D" alt="green">
-            <input type="button" value="" onClick="document.bgColor = '#39C6DB';document.fgColor='#000000';" style="background-color: #39C6DB; border:1px solid #32AFC2" alt="skyblue">
-            <input type="button" value="" onClick="document.bgColor = '#5E8DAD';document.fgColor='#ffffff';" style="background-color: #5E8DAD; border:1px solid #4D7691" alt="blue">
-            <input type="button" value="" onClick="document.bgColor = '#9B6FC9';document.fgColor='#ffffff';" style="background-color: #9B6FC9; border:1px solid #7D50AD" alt="violet"></p>
-		</form><br><br>
-	</div>
-	<div id="contents">
-		<div class="iDevice">
-			<h1>iPhone</h1>
-			<div class="Size">
-				<ul class="Retina">
-					<li>
-						<img class="Icon" src="icon.png" alt="icon.png">
-						<h1>icon.png</h1>
-						<span class="info"><em>57px</em> R:10px</span>
-					</li>
-					<li>
-						<img class="Icon" src="icon@2x.png" alt="icon@2x.png">
-						<h1>icon@2x.png</h1>
-						<span class="info"><em>114px</em> R:20px</span>
-					</li>
+	<!-- Android -->
+	<!-- I'll fix auto-detect device DPI next version.
+    <link rel="shortcut icon" sizes="36x36" href="images/android/drawable-ldpi/icon.png" />
+    <link rel="shortcut icon" sizes="48x48" href="images/android/drawable-mdpi/icon.png" />
+    <link rel="shortcut icon" sizes="72x72" href="images/android/drawable-hdpi/icon.png" />
+    <link rel="shortcut icon" sizes="96x96" href="images/android/drawable-xhdpi/icon.png" />
+    <link rel="shortcut icon" sizes="144x144" href="images/android/drawable-xxhdpi/icon.png" />
+    <link rel="shortcut icon" sizes="192x192" href="images/android/drawable-xxxhdpi/icon.png" />
+   -->
+   
+   	<link rel="shortcut icon" href="images/android/icon.png" />		
+   	
+		<meta name="format-detection" content="telephone=no" />
+		<title>Icon Tester</title>
+		<meta name="viewport" content="minimum-scale=1.0; maximum-scale=1.0; user-scalable=no; initial-scale=1.0; width=device-width;" />
+		
+		<!-- iOS7 bug - a tag target error on full screen web app mode :(
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		-->
+				
+		<link rel="stylesheet" href="css/app.css">
+		<!-- jQuery library -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    	<script type="text/javascript" charset="utf-8">
+			$(function(){
+				// lang_en
+				$(".lang_en").click(function(){
+			    	$(this).addClass("lang_act");
+			    	$(".lang_ko").removeClass("lang_act");
+			    	$(".main").addClass("en");
+			    	$(".main").removeClass("ko");
+				});
+				// lang_ko
+				$(".lang_ko").click(function(){
+			    	$(this).addClass("lang_act");
+			    	$(".lang_en").removeClass("lang_act");
+			    	$(".main").addClass("ko");
+			    	$(".main").removeClass("en");
+				});
+				// tab_test
+				$(".link_test").click(function(){
+			    	$(".tab_test").addClass("pressed");
+			    	$(".tab_info").removeClass("pressed");
+			    	$(".contents_test").removeClass("hidden");
+			    	$(".contents_info").addClass("hidden");
+				});
+				// tab_info
+				$(".link_info").click(function(){
+			    	$(".tab_info").addClass("pressed");
+			    	$(".tab_test").removeClass("pressed");
+			    	$(".contents_info").removeClass("hidden");
+			    	$(".contents_test").addClass("hidden");
+				});
+				// nav_iOS
+				$(".nav_iOS").click(function(){
+			    	$(".nav_iOS").addClass("pressed");
+			    	$(".nav_scan").removeClass("pressed");
+			    	$(".iOS").removeClass("hidden");
+			    	$(".Android").addClass("hidden");
+				});
+				// nav_scan
+				$(".nav_scan").click(function(){
+			    	$(".nav_scan").addClass("pressed");
+			    	$(".nav_iOS").removeClass("pressed");
+			    	$(".Android").removeClass("hidden");
+			    	$(".iOS").addClass("hidden");
+				});
+			});
+			</script>
+			
+	</head>
+	<body class="main en"><! test lang: en / ko -->
+		<!-- <div class="header">
+			<span class="header_title en">Icon Tester <span class="lighter">How to use</span></span>
+			<span class="header_title ko">Icon Tester <span class="lighter">사용법</span></span>
+			
+		</div> -->
+		
+		<div class="contents contents_test nav-contents hidden">
+			
+			<a href="#skipTop">
+			<div id="nav">
+				<ul>
+					<li class="nav_iOS pressed">iOS</li>
+					<li class="nav_scan">Android</li>
 				</ul>
+			</div></a>
+
+			<div class="lang">
+			<span class="lang_act lang_en">English</span> | <span class="lang_ko">한국어</span></span>
+		</div>	
+			<div class="cover cover_test"></div>
+			
+			<div class="iOS">
+			<div class="group_box">
+				<span class="box_title icon_title"><span class="iphone_icon"></span>iPhone</span>
+				<span class="box_sub_title en">iPhone App Icon</span>
+				<span class="box_sub_title ko">iPhone 앱 아이콘</span>
+				<div class="icon_box_group">
+					<ul class="icon_box icon3">
+						<li>
+							<img class="icon" src="images/iPhone/icon.png" alt="icon.png">
+							<span class="file_name">icon</span>
+							<span class="file_size">57x57 px<br></span>
+							<span class="file_info gray">iOS6 Rounded Corners<br>10 px</span>
+							
+						</li>
+						<li>
+							<img class="icon" src="images/iPhone/icon@2x.png" alt="icon@2x.png">
+							<span class="file_name">icon@2x</span>
+							<span class="file_size">114x114 px<br></span>
+							<span class="file_info gray">iOS6 Rounded Corners<br>20 px</span>
+							
+						</li>
+						<li>
+							<div class="icon-60">
+								<img src="images/iPhone/icon-60@2x.png" alt="icon-60@2x.png">
+								<div class="mask"></div>
+							</div>
+							<span class="file_name blue">icon-60@2x</span>
+							<span class="file_size blue">120x120 px<br></span>
+							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							
+						</li>
+					</ul>
+				</div>
+				<span class="box_sub_title en">iPhone Spotlight Icon</span>
+				<span class="box_sub_title ko">iPhone 검색(Spotlight) 아이콘</span>
+				<div class="icon_box_group">
+					<ul class="icon_box icon3">
+						<li>
+							<div class="Icon-Small">
+								<img src="images/iPhone/Icon-Small.png" alt="Icon-Small.png">
+								<div class="mask"></div>
+							</div>
+							<span class="file_name">Icon-Small</span>
+							<span class="file_size">29x29 px<br></span>
+							<span class="file_info gray">iOS6 Rounded Corners<br>5.088 px</span>
+							
+						</li>
+						<li>
+							<div class="Icon-Small">
+								<img src="images/iPhone/Icon-Small@2x.png" alt="Icon-Small@2x.png">
+								<div class="mask"></div>
+							</div>
+							<span class="file_name">Icon-Small@2x</span>
+							<span class="file_size">58x58 px<br></span>
+							<span class="file_info gray">iOS6 Rounded Corners<br>10.175 px</span>
+							
+						</li>
+						<li>
+							<div class="icon-40">
+								<img src="images/iPhone/icon-40@2x.png" alt="icon-40@2x.png">
+								<div class="mask"></div>
+							</div>
+							<span class="file_name blue">icon-40@2x</span>
+							<span class="file_size blue">80x80 px<br></span>
+							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							
+						</li>
+					</ul>
+				</div>
+				<span class="box_sub_title en">iPhone Settings Icon</span>
+				<span class="box_sub_title ko">iPhone 설정 아이콘</span>
+				<div class="icon_box_group">
+					<ul class="icon_box icon3">
+						<li>
+							<div class="Icon-Small">
+								<img src="images/iPhone/Icon-Small.png" alt="Icon-Small.png">
+								<div class="mask"></div>
+							</div>
+							<span class="file_name">Icon-Small</span>
+							<span class="file_size">29x29 px<br></span>
+							<span class="file_info gray">iOS6 Rounded Corners<br>5.088 px</span>
+							
+						</li>
+						<li>
+							<div class="Icon-Small">
+								<img src="images/iPhone/Icon-Small@2x.png" alt="Icon-Small@2x.png">
+								<div class="mask"></div>
+							</div>
+							<span class="file_name">Icon-Small@2x</span>
+							<span class="file_size">58x58 px<br></span>
+							<span class="file_info gray">iOS6 Rounded Corners<br>10.175 px</span>
+							
+						</li>
+						<li>
+							<div class="Icon-Small_iOS7">
+								<img src="images/iPhone/Icon-Small@2x.png" alt="Icon-Small@2x.png">
+								<div class="mask"></div>
+							</div>
+							<span class="file_name blue">Icon-Small@2x</span>
+							<span class="file_size blue">58x58 px<br></span>
+							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							
+						</li>
+					</ul>
+				</div>
+
 			</div>
-            <div class="Size">
-                <ul class="Retina">
-                    <li>
-                        <img class="Icon-Small" src="Icon-Small.png" alt="Icon-Small.png">
-                        <h1>Icon-Small.png</h1>
-                        <span class="info"><em>29px</em> R:5.088px</span>
-                    </li>
-                    <li>
-                        <img class="Icon-Small" src="Icon-Small@2x.png" alt="Icon-Small@2x.png">
-                        <h1>Icon-Small@2x.png</h1>
-                        <span class="info"><em>58px</em> R:10.175px</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="iDevice">
-            <h1>iPad</h1>
-            <div class="Size">
-                <ul class="Retina">
-                    <li>
-                        <img class="Icon-72" src="icon-72.png" alt="icon-72.png">
-                        <h1>icon-72.png</h1>
-                        <span class="info"><em>72px</em> R:12.632px</span>
-                    </li>
-                    <li>
-                        <img class="Icon-72" src="icon-72@2x.png" alt="icon-72@2x.png">
-                        <h1>icon-72@2x.png</h1>
-                        <span class="info"><em>144px</em> R:25.263px</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="Size">
-                <ul class="Retina">
-                    <li>
-                        <img class="Icon-Small-50" src="Icon-Small-50.png" alt="Icon-Small-50.png">
-                        <h1>Icon-Small-50.png</h1>
-                        <span class="info"><em>50px</em> R:8.772px</span>
-                    </li>
-                    <li>
-                        <img class="Icon-Small-50" src="Icon-Small-50@2x.png" alt="Icon-Small-50.png">
-                        <h1>Icon-Small-50@2x</h1>
-                        <span class="info"><em>100px</em> R:17.544px</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div  id="iTunes">
-            <h1>iTunesArtwork</h1>
-            <div class="Size">
-                <ul>
-                    <li>
-                        <img class="iTunesArtwork" src="iTunesArtwork.png" alt="iTunesArtwork.png">
-                        <h1>iTunesArtwork.png</h1>
-                        <span class="info"><em>1024px</em> R:179.65px</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-	</div>
-    <div id="footer">
-	    <a href="http://daramghaus.com" target="_blank"><div id="footerLink"></div></a>
-	    <br><br><center><p>&copy; daramghaus.com<br>Icon Tester ver 1.1.2</p></center>
-	</div>
-</div>
-</body>
+			<div class="group_box">
+				<span class="box_title icon_title"><span class="ipad_icon"></span>iPad</span>
+				<span class="box_sub_title en">iPad App Icon</span>
+				<span class="box_sub_title ko">iPad 앱 아이콘</span>
+				<div class="icon_box_group">
+					<ul class="icon_box icon4">
+						<li>
+							<img class="icon-72" src="images/iPad/icon-72.png" alt="icon-72.png">
+							<span class="file_name">icon-72</span>
+							<span class="file_size">72x72 px<br></span>
+							<span class="file_info gray">iOS6 Rounded Corners<br>12.632 px</span>
+							
+						</li>
+						<li>
+							<img class="icon-72" src="images/iPad/icon-72@2x.png" alt="icon-72@2x.png">
+							<span class="file_name">icon-72@2x</span>
+							<span class="file_size">144x144 px<br></span>
+							<span class="file_info gray">iOS6 Rounded Corners<br>25.263 px</span>
+							
+						</li>
+						<li>
+							<div class="icon-76">
+								<img src="images/iPad/icon-76.png" alt="icon-76.png">
+								<div class="mask"></div>
+							</div>
+							<span class="file_name blue">icon-76</span>
+							<span class="file_size blue">76x76 px<br></span>
+							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							
+						</li>
+						<li>
+							<div class="icon-76">
+								<img src="images/iPad/icon-76@2x.png" alt="icon-76@2x.png">
+								<div class="mask"></div>
+							</div>
+							<span class="file_name blue">icon-76@2x</span>
+							<span class="file_size blue">152x152 px<br></span>
+							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							
+						</li>
+					</ul>
+				</div>
+				<span class="box_sub_title en">iPad Spotlight Icon</span>
+				<span class="box_sub_title ko">iPad 검색(Spotlight) 아이콘</span>
+				<div class="icon_box_group">
+					<ul class="icon_box icon4">
+						<li>
+							<div class="Icon-Small-50">
+								<img src="images/iPad/Icon-Small-50.png" alt="Icon-Small-50.png">
+								<div class="mask"></div>
+							</div>
+							<span class="file_name">Icon-Small-50</span>
+							<span class="file_size">50x50 px<br></span>
+							<span class="file_info gray">iOS6 Rounded Corners<br>8.772 px</span>
+							
+						</li>
+						<li>
+							<div class="Icon-Small-50">
+								<img src="images/iPad/Icon-Small-50@2x.png" alt="Icon-Small-50@2x.png">
+								<div class="mask"></div>
+							</div>
+							<span class="file_name">Icon-Small-50@2x</span>
+							<span class="file_size">100x100 px<br></span>
+							<span class="file_info gray">iOS6 Rounded Corners<br>17.544 px</span>
+							
+						</li>
+						<li>
+							<div class="icon-40">
+								<img src="images/iPad/icon-40.png" alt="icon-40.png">
+								<div class="mask"></div>
+							</div>
+							<span class="file_name blue">icon-40</span>
+							<span class="file_size blue">40x40 px<br></span>
+							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							
+						</li>
+						<li>
+							<div class="icon-40">
+								<img src="images/iPad/icon-40@2x.png" alt="icon-40@2x.png">
+								<div class="mask"></div>
+							</div>
+							<span class="file_name blue">icon-40@2x</span>
+							<span class="file_size blue">80x80 px<br></span>
+							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							
+						</li>
+					</ul>
+				</div>
+				<span class="box_sub_title en">iPad Settings Icon</span>
+				<span class="box_sub_title ko">iPad 설정 아이콘</span>
+				<div class="icon_box_group">
+					<ul class="icon_box icon4">
+						<li>
+							<div class="Icon-Small">
+								<img src="images/iPad/Icon-Small.png" alt="Icon-Small.png">
+								<div class="mask"></div>
+							</div>							
+							<span class="file_name">Icon-Small</span>
+							<span class="file_size">29x29 px<br></span>
+							<span class="file_info gray">iOS6 Rounded Corners<br>5.088 px</span>
+							
+						</li>
+						<li>
+							<div class="Icon-Small">
+								<img src="images/iPad/Icon-Small@2x.png" alt="Icon-Small@2x.png">
+								<div class="mask"></div>
+							</div>
+							<span class="file_name">Icon-Small@2x</span>
+							<span class="file_size">58x58 px<br></span>
+							<span class="file_info gray">iOS6 Rounded Corners<br>10.175 px</span>
+							
+						</li>
+						<li>
+							<div class="Icon-Small_iOS7">
+								<img src="images/iPad/Icon-Small.png" alt="Icon-Small.png">
+								<div class="mask"></div>
+							</div>
+							<span class="file_name blue">Icon-Small</span>
+							<span class="file_size blue">58x58 px<br></span>
+							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							
+						</li>
+						<li>
+							<div class="Icon-Small_iOS7">
+								<img src="images/iPad/Icon-Small@2x.png" alt="Icon-Small@2x.png">
+								<div class="mask"></div>
+							</div>
+							<span class="file_name blue">Icon-Small@2x</span>
+							<span class="file_size blue">58x58 px<br></span>
+							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							
+						</li>
+					</ul>
+				</div>
+				
+
+			</div>
+			<div class="group_box">
+				<span class="box_title icon_title"><span class="itunes_icon"></span>iTunes Artwork</span>
+				<span class="box_sub_title en">App Store Icon</span>
+				<span class="box_sub_title ko">앱 스토어 아이콘</span>
+				<div class="icon_box_group">
+					<ul class="icon_box icon2">
+						<li>
+							<div class="iTunesArtwork">
+								<img src="images/iTunesArtwork.png" alt="iTunesArtwork.png">
+								<div class="mask"></div>
+							</div>
+							<span class="file_name">iTunesArtwork</span>
+							<span class="file_size">1024x1024 px<br></span>
+							<span class="file_info gray">iOS6 Rounded Corners<br>179.65 px</span>
+							
+						</li>
+						
+						<li>
+							<div class="iTunesArtwork_iOS7">
+								<img src="images/iTunesArtwork.png" alt="iTunesArtwork.png">
+								<div class="mask"></div>
+							</div>
+							<span class="file_name blue">iTunesArtwork</span>
+							<span class="file_size blue">1024x1024 px<br></span>
+							<span class="file_info blue">iOS7 Rounded Corners<br>&nbsp;</span>
+							
+						</li>
+					</ul>
+				</div>
+			</div>
+			</div> <!-- end of iOS -->
+			
+			<div class="Android hidden">
+			<div class="group_box">
+				<span class="box_title icon_title"><span class="android_icon"></span>Android</span>
+				<span class="box_sub_title en">Android App Icon</span>
+				<span class="box_sub_title ko">Android 앱 아이콘</span>
+				<div class="icon_box_group">
+					<ul class="icon_box icon1">
+						<li>
+							<img class="icon_android" src="http://static.tumblr.com/iawroni/fQcn5vjvs/icon.png" alt="LDPI">
+							<span class="file_name">icon.png</span>
+							<span class="file_size blue">images/android/icon.png<br></span>
+							<span class="file_info gray en">Replace this image, appears on the Home screen.</span>
+							<span class="file_info gray ko">이 이미지를 교체해야 홈화면에 보입니다.</span>
+						</li>
+						
+					</ul>
+
+					<ul class="icon_box icon3">
+						<li>
+							<img class="icon_android" src="images/android/drawable-ldpi/icon.png" alt="LDPI">
+							<span class="file_name">LDPI</span>
+							<span class="file_size">32x32 px<br></span>
+							<span class="file_info gray">~120 DPI</span>
+						</li>
+						<li>
+							<img class="icon_android" src="images/android/drawable-mdpi/icon.png" alt="MDPI">
+							<span class="file_name">MDPI</span>
+							<span class="file_size">48x48 px<br></span>
+							<span class="file_info gray">~160 DPI</span>
+						</li>
+						<li>
+							<img class="icon_android" src="images/android/drawable-hdpi/icon.png" alt="HDPI">
+							<span class="file_name">MDPI</span>
+							<span class="file_size">72x72 px<br></span>
+							<span class="file_info gray">~240 DPI</span>
+						</li>
+						<li>
+							<img class="icon_android" src="images/android/drawable-xhdpi/icon.png" alt="XHDPI">
+							<span class="file_name">XHDPI</span>
+							<span class="file_size">96x96 px<br></span>
+							<span class="file_info gray">~320 DPI</span>
+						</li>
+						<li>
+							<img class="icon_android" src="images/android/drawable-xxhdpi/icon.png" alt="XXHDPI">
+							<span class="file_name">XXHDPI</span>
+							<span class="file_size">144x144 px<br></span>
+							<span class="file_info gray">~480 DPI</span>
+						</li>
+						<li>
+							<img class="icon_android" src="images/android/drawable-xxxhdpi/icon.png" alt="XXXHDPI">
+							<span class="file_name">XXXHDPI</span>
+							<span class="file_size">192x192 px<br></span>
+							<span class="file_info gray">~640 DPI</span>
+						</li>
+					</ul>
+				</div>
+				<span class="box_sub_title en">GooglePlay Icon</span>
+				<span class="box_sub_title ko">GooglePlay 아이콘</span>
+				<div class="icon_box_group">
+					<ul class="icon_box icon1">
+						<li>
+							<div class="store-icon-android">
+								<img src="images/android/icon-512.png" alt="GooglePlay Icon">
+							</div>
+							<span class="file_name">icon-512</span>
+							<span class="file_size">512x512 px<br></span>
+							<span class="file_info gray"></span>
+							
+						</li>
+					</ul>
+				</div>
+			</div>
+			</div> <!-- end of android -->
+			
+		</div>
+		<div class="contents contents_info">
+		<div class="lang">
+			<span class="lang_act lang_en">English</span> | <span class="lang_ko">한국어</span></span>
+		</div>		
+			<div class="cover cover_info"></div>
+			
+			<div class="group_box">
+				<span class="box_sub_title en">Icon Test Tool for Designer</span>
+				<span class="box_sub_title ko">디자이너를 위한 아이콘 테스트 툴</span>
+				
+				<span class="box_description en">Icon Tester is Web App, you will be able to test easily your icon by <b><span class="share_add_icon_inline"></span>Add to Home Screen</b> function on iOS - Safari or Android - Google Chrome.<br>To use Icon Tester you will need your Web Server(Local or Internet).</span>
+				<span class="box_description ko">Icon Tester는 iOS - Safari 또는 Android - Google Chrome의 <b><span class="share_add_icon_inline"></span>홈 화면에 추가</b> 기능을 사용하여 쉽게 아이콘을 테스트할 수 있는 웹 앱입니다.<br>Icon Tester를 쓰려면 당신의 웹 서버(로컬 또는 인터넷)가 필요합니다.</span>
+				
+				<span class="box_footer en">Icon Tester Ver.2.1 &mdash; Support iOS, Android</span>
+				<span class="box_footer ko">Icon Tester Ver.2.1 &mdash; iOS, Android 지원</span>
+			</div>
+			<div class="group_box">
+			
+			<span class="box_title en">How to Use</span>
+			<span class="box_title ko">사용법</span>
+			
+			<span class="box_description en box_ol">
+			<ol>
+<li><b><a href="http://daramghaus.com/icontester/beta/download" target="_blank">Download</a></b> Icon Tester to your Mac or PC.</li>
+<li>Unzip and Upload all files(index.html, css and images folders) to your Web Server.</li>
+<li>Overwrite your icon image files on <b>images</b> folder.<br><b>Android</b>: Overwrite "<i>images/android/icon.png</i>" image.</li>
+<li>Open the <b>index.html</b> on device default web browser of your device.<br>
+<b>iOS</b>: Safari(iPhone or iPad)<br>
+<b>Android</b>: Google Chrome</li>
+<li>Add to Home Screen.<br>
+<b>iOS</b>: Tap <span class="share_icon_inline"></span><b>Share</b> bottun and then <span class="share_add_icon_inline"></span><b>Add to Home Screen</b>
+<br><img src="css/images/info.jpg" style="width:100%;height:auto;padding:8px 0 8px">
+<b>Android</b>: Tap menu button(top right), Tap <b>Add to Home Screen</b>.
+<br><img src="css/images/info_android.jpg" style="width:100%;height:auto;padding:8px 0 8px">
+</li>
+<li>If you want Icon refresh, Overwrite icon image files again,<br>
+<b>iOS</b>: Run and close the icon on Home Screen, Refresh automatically.<br>
+<b>Android</b>: Delete Icon on Home Screen, and add icon again on Chrome.</li>
+			</ol>
+			<span class="blue"><b>TIP</b></span> You can compare multiple icons. Create multiple Icon Tester folders on the Web server, and "Add to Home Screen" on each web page.
+			</span>
+			<span class="box_description ko box_ol">
+			<ol>
+<li>Icon Tester를 맥 또는 PC에 <a href="http://daramghaus.com/icontester/beta/download" target="_blank">다운로드</a>합니다.</li>
+<li>압축을 풀고, 모든 파일(index.html, css, images 폴더)을 당신의 웹 서버에 업로드합니다.</li>
+<li>작업한 아이콘 이미지 파일을 "images"폴더에 덮어씁니다.<br><b>Android</b>에서는 "<i>images/android/icon.png</i>" 이미지만 교체하면 "홈 화면"에 보입니다. 디바이스의 해상도와 상관없이 해당 이미지만 교체해서 테스트하세요.</li>
+
+<li><span class="blue">index.html</span>를 디바이스의 기본 웹 브라우저에서 엽니다.<br>
+<b>iOS</b>: Safari(iPhone or iPad)<br>
+<b>Android</b>: Google Chrome</li>
+<li>홈 화면에 아이콘을 추가합니다.<br>
+<b>iOS</b>: <span class="share_icon_inline"></span><b>공유하기</b></span> 버튼을 탭한 다음, <span class="share_add_icon_inline"></span><b>홈 화면에 추가</b>합니다.<br><img src="css/images/info.jpg" style="width:100%;height:auto;padding:8px 0 8px">
+<b>Android</b>: Chrome에서 우측 상단 메뉴버튼을 눌러, <b>홈 화면에 추가</b>를 선택합니다.
+<br><img src="css/images/info_android.jpg" style="width:100%;height:auto;padding:8px 0 8px">
+</li>
+<li>아이콘을 갱신하려면, 아이콘 이미지 파일을 다시 덮어 씌우고, <br>
+<b>iOS</b>: 홈 화면에 있는 아이콘을 실행하고 닫으면 자동으로 아이콘이 바뀝니다.
+<b>Android</b>: 아이콘을 삭제하고 다시 추가합니다.</li>
+</li>
+			</ol>
+			<span class="blue"><b>TIP</b></span> 여러 아이콘을 비교할 수 있습니다. 웹 서버에 여러 Icon Tester 폴더를 만들고, 각각의 웹페이지에서 "홈 화면에 추가"하세요.
+			</span>
+			</span>
+
+			
+			</div>
+			<div class="group_box">	
+				<a href="http://daramghaus.com/icontester/beta/download" target="_blank">
+					<span class="long_btn recommend en">Download</span>
+					<span class="long_btn recommend ko">다운로드</span>
+				</a>
+				
+				<a href="mailto:daramghaus@gmail.com?subject=Icon Tester Feedback">
+					<span class="long_btn en">Contact and Feedback</span>
+					<span class="long_btn ko">문의 및 피드백</span>
+				</a>
+				
+				<a href="http://daramghaus.com" target="_blank">
+					<span class="long_btn en"><span class="daramghaus_logo_inline"></span>daramghaus</span>
+					<span class="long_btn ko"><span class="daramghaus_logo_inline"></span>다람쥐하우스</span>
+				</a>
+			</div>
+			
+			
+			
+		</div>
+		<div class="contents_footer">
+			<!-- bitcoin donate -->
+			<p><a href="http://daramghaus.com/donate/bitcoin" target="_blank"><img class="bitcoin_donate" src="http://static.tumblr.com/iawroni/Qj7n64j61/donate_64.png"></a></p><br />
+			<!-- end of bitcoin donate -->
+					
+			<a href="http://daramghaus.com/donate" target="_blank">
+				<span class="donate_btn en"><span class="donate">Donate </span><span class="paypal_logo_inline"></span></span>
+				<span class="donate_btn ko"><span class="paypal_logo_inline"></span><span class="donate"> 기부하기</span></span>
+			</a>
+			
+			<div class="banner" style="width:100%;text-align: center;margin-top:1.6em;margin-bottom:2em;">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- IconTester-Mobile -->
+			<ins class="adsbygoogle"
+			     style="display:inline-block;width:320px;height:50px"
+			     data-ad-client="ca-pub-8325874317500955"
+			     data-ad-slot="1070687224"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+			</div>
+			<div class="group_footer">
+				<div class="copyright en">
+					Copyright &copy; 2014 <a href="http://daramghaus.com" target="_blank"><span class="daramghaus_logo_inline_gray"></span>daramghaus</a><br>
+					Icon Tester can be used for commercial purposes.<br>Redistribution is possible, and not be able to sell.<br>Do not change HTML/CSS documents.
+				</div>
+				<div class="copyright ko">
+				Copyright &copy; 2014 <a href="http://daramghaus.com" target="_blank"><span class="daramghaus_logo_inline_gray"></span>다람쥐하우스(daramghaus)</a><br>
+					Icon Tester는 상업적인 용도로 사용할 수 있습니다.<br>재배포가 가능하며, 판매할 수 없습니다.<br>HTML/CSS 문서를 변경하지 마십시오.
+				</div>
+			</div>
+			
+			<div class="group_box top_border">
+				<div class="box_description en">Reference</div>
+				<div class="box_description ko">참고</div>
+				<div class="box_sub_description">
+					<ul class="box_ul">
+						<li>iOS Developer Library: <a href="https://developer.apple.com/library/ios/qa/qa1686/_index.html" target="_blank">App Icons on iPad and iPhone</a></li>
+						<li>iOS Developer Library: <a href="https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html" target="_blank">Configuring Web Applications</a></li>
+						<li>Dribbble: <a href="http://dribbble.com/shots/1127699-iOS-7-icon-shape-PSD/" target="_blank">iOS 7 icon shape (PSD)</a> by <a href="http://dribbble.com/bjango" target="_blank">Marc Edwards(Bjango)</a></li>
+						<li><a href="http://www.mani.de/backstage/?p=483" target="_blank">Exploring iOS 7 Rounded Corners</a></li>
+						<li><a href="http://www.pixelresort.com/blog/start-making-ios-7-icons-with-the-app-icon-template-3-0/" target="_blank">Start making iOS 7 Icons with the App Icon Template 3.0</a></li>
+					</ul>
+				</div>
+
+
+			
+		</div>
+		<div class="tabbar">
+			<div class="tabbar_area">
+				<span class="tab_test link_test en">Icon Tester</span>
+				<span class="tab_test link_test ko">Icon Tester</span>
+				<span class="tab_info link_info en pressed">How to Use</span>
+				<span class="tab_info link_info ko pressed">사용법</span>
+			</div>
+		</div>
+	</body>
 </html>
